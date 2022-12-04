@@ -1,26 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <mainPage/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import mainPage from './components/mainPage.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    mainPage
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+* {
+    font-family: "Secular One", sans-serif;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    line-height: 200%;
+    word-break: keep-all;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(50deg, #ffcaa6, #f86594);
 }
 </style>
